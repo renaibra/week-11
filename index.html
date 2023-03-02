@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Tic-Tac-Toe Game</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+	<style>
+		.cell {
+			width: 100px;
+			height: 100px;
+			border: 1px solid black;
+			text-align: center;
+			font-size: 50px;
+			cursor: pointer;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="row">
+			<div class="col">
+				<h1 id="turn"></h1>
+				<button class="btn btn-primary" onclick="restart()">Restart Game</button>
+				<br><br>
+				<div id="board">
+					<div class="row">
+						<div class="col cell" onclick="play(0, 0)"></div>
+						<div class="col cell" onclick="play(0, 1)"></div>
+						<div class="col cell" onclick="play(0, 2)"></div>
+					</div>
+					<div class="row">
+						<div class="col cell" onclick="play(1, 0)"></div>
+						<div class="col cell" onclick="play(1, 1)"></div>
+						<div class="col cell" onclick="play(1, 2)"></div>
+					</div>
+					<div class="row">
+						<div class="col cell" onclick="play(2, 0)"></div>
+						<div class="col cell" onclick="play(2, 1)"></div>
+						<div class="col cell" onclick="play(2, 2)"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+<script src="node_modules/jquery/dist/jquery.min.js"></script>
+<script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="script.js"></script>
+
+</html>
+
